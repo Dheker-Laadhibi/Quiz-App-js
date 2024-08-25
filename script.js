@@ -23,15 +23,7 @@ answers:[
           { text: 'Colorful Style Sheets', correct: false }
         ]
       },
-      {
-        question: 'What is the correct syntax for referring to an external script called "script.js"?',
-        answers: [
-          { text: '<script src="script.js">', correct: true },
-          { text: '<script href="script.js">', correct: false },
-          { text: '<script ref="script.js">', correct: false },
-          { text: '<script name="script.js">', correct: false }
-        ]
-      },
+      
       {
         question: 'Which property is used to change the background color in CSS?',
         answers: [
@@ -133,7 +125,7 @@ next.style.display="block"
 
  function showScore(){
 resetState();
-question0.innerHTML=`your score is :${score} out of ${questions.length}!`;
+question.innerHTML=`your score is :${score} out of ${questions.length}!`;
 next.innerHTML='play Again';
 //display the next button
 next.style.display="block"
